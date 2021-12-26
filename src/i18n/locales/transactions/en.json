@@ -1,0 +1,51 @@
+{
+  "pageHeadline": "transactions",
+  "table": {
+    "rowsPerPage": "Rows per page",
+    "rangeSeparator": "of"
+  },
+  "depositConfirmed": "Your deposit with amount if {{amount}} BTC is now confirmed and added to your balance",
+  "depositPending": "Your deposit with amount of {{amount}} BTC is now pending",
+  "depositRejected": "Deposit of {{amount}} BTC was rejected.",
+  "withdrawPending": "Withdraw transaction with amount of {{amount}} BTC is now pending",
+  "withdrawConfirmed": "Withdraw transaction with amount of {{amount}} BTC is now confirmed",
+  "withdrawRejected": "Withdraw transaction with amount of {{amount}} BTC is now rejected and amount credited back to your balance",
+  "withdrawSubmitted": "Withdraw transaction with amount of {{amount}} BTC is submitted to the network",
+  "bonusNotification": "Congratulations! You won new bonus!",
+  "notificationEnum": {
+    "DAILY": "daily",
+    "WEEKLY": "weekly",
+    "MONTHLY": "monthly"
+  },
+  "buttonName": {
+    "withdrawals": "Withdrawals",
+    "deposits": "Deposits",
+    "bets": "Bets",
+    "bonuses": "Bonuses",
+    "achievements": "Achievements",
+    "affiliates": "Affiliates"
+  },
+  "affiliates": {
+    "id": "ID",
+    "commission": "Commission",
+    "time": "Time"
+  },
+  "bets": {
+    "time": "Date/Time",
+    "id": "Bet Id",
+    "amount": "Amount",
+    "profit": "Profit"
+  },
+  "deposits": {
+    "time": "Date/Time",
+    "hash": "Hash",
+    "amount": "Amount"
+  },
+  "bonuses": {
+    "time": "Time",
+    "pos": "Pos",
+    "type": "Type",
+    "wager": "Wager",
+    "bonus": "Bonus"
+  }
+}

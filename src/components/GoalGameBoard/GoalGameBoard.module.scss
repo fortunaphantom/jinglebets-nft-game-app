@@ -1,0 +1,101 @@
+@import '../../styles/shared';
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px,
+);
+
+.container {
+  position: relative;
+  width: 100%;
+
+  @include media-breakpoint-up(xxl) {
+    transform: scale(0.85);
+  }
+
+  > * {
+    user-select: none;
+  }
+}
+
+.goal {
+  &__background {
+    @include media-breakpoint-down(lg) {
+      width: 160%;
+      margin-left: -30%;
+    }
+    @include media-breakpoint-down(md) {
+      width: 180%;
+      margin-left: -40%;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 210%;
+      margin-left: -55%;
+    }
+  }
+
+  &__keeper {
+    position: absolute;
+  }
+
+  &__selection {
+    &__container {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      top: 5%;
+      width: 40%;
+      left: 30%;
+
+      @include media-breakpoint-down(lg) {
+        width: 64%;
+        left: 18%;
+      }
+
+      @include media-breakpoint-down(md) {
+        top: 6%;
+        width: 70%;
+        left: 15%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 85%;
+        left: 8%;
+      }
+    }
+
+    &__ball {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 17%;
+
+      &__clickable {
+        cursor: pointer;
+      }
+
+      &__svg {
+        // transform: scale(1.25);
+      }
+    }
+  }
+
+  &__main_ball {
+    display: none;
+    position: absolute;
+    width: 10%;
+    left: 45%;
+    bottom: -0.5rem;
+
+    @include media-breakpoint-down(lg) {
+      width: 18%;
+      left: 41%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+    }
+  }
+}

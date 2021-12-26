@@ -1,0 +1,4 @@
+build/
+node-modules/
+
+src/graphql/possibleTypes.json

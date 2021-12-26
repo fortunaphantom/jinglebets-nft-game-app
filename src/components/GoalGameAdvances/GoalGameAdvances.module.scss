@@ -1,0 +1,126 @@
+@import '../../styles/shared';
+@import '~bootstrap-scss/variables';
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px,
+);
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 285px;
+  height: 100%;
+  left: 24px;
+
+  @include media-breakpoint-down(xl) {
+    max-width: 400px;
+  }
+}
+
+.innerContainer {
+  background: #13223985;
+  z-index: 1;
+  border-radius: 12px;
+  max-height: 100%;
+  width: 100%;
+  border: 1px solid #283d5d;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include media-breakpoint-down(xl) {
+    border: none;
+  }
+}
+
+.single_advance {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin: 10px 0;
+  justify-content: space-between;
+  width: 100%;
+
+  &__current {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  & > div:not(:first-child) {
+    display: block;
+  }
+
+  &__status {
+    min-width: 60px;
+    min-height: 35px;
+    border: 1px solid #a0a0a0;
+    border-radius: 15px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__current {
+      border-color: #ffd800;
+    }
+
+    &__lost {
+      border-color: #fd7979;
+    }
+
+    &__won {
+      border-color: #73fc7f;
+    }
+
+    &__spot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: #2d4560;
+      margin: 2px;
+      border-radius: 50%;
+      opacity: 0.4;
+
+      &__hidden {
+        opacity: 0;
+      }
+
+      &__selected {
+        opacity: 1;
+      }
+
+      &__unlucky {
+        background-color: #fd7979;
+      }
+
+      &__lucky {
+        background-color: #73fc7f;
+      }
+    }
+  }
+
+  &__multiplier {
+    font-size: 13px;
+    font-weight: normal;
+  }
+
+  &__profit {
+    margin-left: auto;
+    width: 100px;
+    font-size: 13px;
+    font-weight: 900;
+
+    @include media-breakpoint-down(xl) {
+      width: 120px;
+    }
+  }
+}

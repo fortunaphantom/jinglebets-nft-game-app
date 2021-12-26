@@ -1,0 +1,18 @@
+@import '../../styles/shared';
+
+.container {
+  min-height: 500px;
+
+  &__inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.details {
+  margin-bottom: 1rem;
+}
+
+.value {
+  justify-content: flex-end;
+}
